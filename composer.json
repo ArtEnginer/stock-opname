@@ -11,7 +11,11 @@
     },
     "require": {
         "php": "^7.4 || ^8.0",
-        "codeigniter4/framework": "^4.0"
+        "box/spout": "^3.3",
+        "codeigniter4/framework": "^4.0",
+        "illuminate/database": "^10.35",
+        "illuminate/events": "^10.35",
+        "phpoffice/phpspreadsheet": "^1.29"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9",
