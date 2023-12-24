@@ -8,6 +8,8 @@
                 <a href="<?= base_url() . 'item/create' ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah</a>
                 <!-- import -->
                 <a href="<?= base_url() . 'item/import' ?>" class="btn btn-success btn-sm"><i class="fas fa-file-import"></i> Import</a>
+                <!-- export -->
+                <a href="<?= base_url() . 'item/export' ?>" class="btn btn-warning btn-sm"><i class="fas fa-file-export"></i> Export</a>
             </div>
         </div>
         <div class="card-body">
@@ -16,7 +18,13 @@
                     <th>No</th>
                     <th>Kode</th>
                     <th>Nama Barang</th>
-                    <th>action</th>
+                    <th>Satuan</th>
+                    <th>Harga Beli</th>
+                    <th>Harga Jual</th>
+                    <th>Harga Jual Grosir</th>
+                    <th>Supplier</th>
+                    <th>Stok</th>
+                    <th>Aksi</th>
                 </thead>
                 <tbody>
 

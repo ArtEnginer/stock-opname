@@ -18,6 +18,8 @@ $routes->group('item', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->get('/', 'Item::index');
     $routes->get('create', 'Item::create');
     $routes->get('import', 'Item::import');
+    $routes->get('export', 'Item::export');
+    $routes->get('download', 'Item::download');
     $routes->post('store', 'Item::store');
     $routes->get('edit/(:num)', 'Item::edit/$1');
     $routes->post('update/(:num)', 'Item::update/$1');

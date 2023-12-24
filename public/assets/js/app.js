@@ -14,6 +14,12 @@ $(document).ready(function () {
       },
       { data: "kode" },
       { data: "nama" },
+      { data: "satuan" },
+      { data: "harga_beli" },
+      { data: "harga_jual" },
+      { data: "harga_jual_grosir" },
+      { data: "supplier" },
+      { data: "stok" },
       {
         data: "action",
         render: function (data, type, row) {
