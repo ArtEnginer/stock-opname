@@ -55,4 +55,9 @@ class Item extends BaseController
         header('Cache-Control: max-age=0');
         $writer->save('php://output');
     }
+
+    public function cekItem()
+    {
+        return view('Pages/Item/cekItem');
+    }
 }

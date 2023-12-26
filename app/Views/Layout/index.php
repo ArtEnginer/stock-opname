@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>STOCK OPNAME</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
     <meta content="" name="keywords">
     <meta content="" name="description">
 
@@ -17,19 +18,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Libraries Stylesheet -->
-    <link href="<?= base_url() . 'assets/lib/animate/animate.min.css' ?>" rel="stylesheet">
-    <link href="<?= base_url() . 'assets/lib/lightbox/css/lightbox.min.css' ?>" rel="stylesheet">
-    <link href="<?= base_url() . 'assets/lib/owlcarouselassets/owl.carousel.min.css' ?>" rel="stylesheet">
-    <script type="text/javascript" src="<?= base_url() . 'assets/lib/jquery-3.6.4.min.js' ?>"></script>
-    <link rel="stylesheet" href="<?= base_url() . 'assets/lib/bootstrap.min.css' ?>">
-    <link rel="stylesheet" href="<?= base_url() . 'assets/lib/dataTables.bootstrap5.min.css' ?>">
+    <link href="<?= base_url() . '/assets/lib/animate/animate.min.css' ?>" rel="stylesheet">
+    <link href="<?= base_url() . '/assets/lib/lightbox/css/lightbox.min.css' ?>" rel="stylesheet">
+    <link href="<?= base_url() . '/assets/lib/owlcarouselassets/owl.carousel.min.css' ?>" rel="stylesheet">
+    <script type="text/javascript" src="<?= base_url() . '/assets/lib/jquery-3.6.4.min.js' ?>"></script>
+    <link rel="stylesheet" href="<?= base_url() . '/assets/lib/bootstrap.min.css' ?>">
+    <link rel="stylesheet" href="<?= base_url() . '/assets/lib/dataTables.bootstrap5.min.css' ?>">
 
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="<?= base_url() . 'assets/css/bootstrap.min.css' ?>" rel="stylesheet">
+    <link href="<?= base_url() . '/assets/css/bootstrap.min.css' ?>" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="<?= base_url() . 'assets/css/style.css' ?>" rel="stylesheet">
+    <link href="<?= base_url() . '/assets/css/style.css' ?>" rel="stylesheet">
 </head>
 </head>
 

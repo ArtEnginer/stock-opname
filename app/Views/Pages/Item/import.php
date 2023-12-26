@@ -10,11 +10,12 @@
 
             <form id="importForm" action="<?= base_url('api/v1/item/import') ?>" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="file">Choose CSV file:</label>
+                    <label for="file">Choose Excel file:</label>
                     <input type="file" class="form-control-file" id="file" name="file" accept=".xlsx" required>
                     <small class="form-text text-muted">Please upload an Excel file.</small>
                 </div>
                 <button type="submit" class="btn btn-primary">Import</button>
+                <div class="loading" style="display: none;">Loading...</div>
             </form>
         </div>
     </div>
@@ -28,7 +29,10 @@
             var formData = new FormData(this);
             var base_url = '<?= base_url() ?>';
 
-            fetch(base_url + 'api/v1/item/import', {
+            // Show loading animation
+            document.querySelector('.loading').style.display = 'block';
+
+            fetch(base_url + 'api/item/import', {
                     method: 'POST',
                     body: formData
                 })
@@ -40,6 +44,9 @@
                     }
                 })
                 .then(data => {
+                    // Hide loading animation
+                    document.querySelector('.loading').style.display = 'none';
+
                     if (data.status === 200) {
                         alert(data.message);
                     } else {
@@ -47,6 +54,9 @@
                     }
                 })
                 .catch(error => {
+                    // Hide loading animation
+                    document.querySelector('.loading').style.display = 'none';
+
                     console.error('Error:', error);
                     alert('Network error occurred. Please try again.');
                 });

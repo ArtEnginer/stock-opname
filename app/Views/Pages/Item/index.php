@@ -13,24 +13,99 @@
             </div>
         </div>
         <div class="card-body">
-            <table id="tableItem" class="display responsive" style="width:100%">
-                <thead>
-                    <th>No</th>
-                    <th>Kode</th>
-                    <th>Nama Barang</th>
-                    <th>Satuan</th>
-                    <th>Harga Beli</th>
-                    <th>Harga Jual</th>
-                    <th>Harga Jual Grosir</th>
-                    <th>Supplier</th>
-                    <th>Stok</th>
-                    <th>Aksi</th>
-                </thead>
-                <tbody>
+            <div class="table-responsive">
+                <table id="tableItem" class="display responsive" style="width:100%">
+                    <thead>
+                        <th>No</th>
+                        <th>Kode</th>
+                        <th>Nama Barang</th>
+                        <th>Satuan</th>
+                        <th>Harga Beli</th>
+                        <th>Harga Jual</th>
+                        <th>Harga Jual Grosir</th>
+                        <th>Supplier</th>
+                        <th>Stok</th>
+                        <th>Aksi</th>
+                    </thead>
+                    <tbody>
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        const table = $("#tableItem").DataTable({
+            responsive: true,
+            ajax: {
+                url: "api/item",
+                dataSrc: "item",
+            },
+            columns: [{
+                    data: null,
+                    render: function(data, type, row, meta) {
+                        return meta.row + meta.settings._iDisplayStart + 1;
+                    },
+                },
+                {
+                    data: "kode"
+                },
+                {
+                    data: "nama"
+                },
+                {
+                    data: "satuan"
+                },
+                {
+                    data: "harga_beli"
+                },
+                {
+                    data: "harga_jual"
+                },
+                {
+                    data: "harga_jual_grosir"
+                },
+                {
+                    data: "supplier"
+                },
+                {
+                    data: "stok"
+                },
+                {
+                    data: "action",
+                    render: function(data, type, row) {
+                        return (
+                            '<a href="item/' +
+                            row.id +
+                            '/edit" class="btn btn-warning btn-sm">Edit</a> <button class="btn btn-danger btn-sm delete-btn" data-id="' +
+                            row.id +
+                            '">Hapus</button>'
+                        );
+                    },
+                },
+            ],
+        });
+
+        // Add an event listener for the delete button
+        $('#tableItem').on('click', '.delete-btn', function() {
+            const itemId = $(this).data('id');
+
+            // Make an AJAX call to delete the item
+            $.ajax({
+                url: 'api/item/' + itemId,
+                type: 'DELETE',
+                success: function(result) {
+                    // Refresh the DataTable after successful deletion
+                    table.ajax.reload();
+                },
+                error: function(error) {
+                    console.error('Error deleting item:', error);
+                },
+            });
+        });
+    });
+</script>
 <?php $this->endSection() ?>

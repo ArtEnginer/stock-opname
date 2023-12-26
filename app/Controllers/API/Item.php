@@ -189,4 +189,22 @@ class Item extends ResourceController
         header('Cache-Control: max-age=0');
         $writer->save('php://output');
     }
+
+    public function cekItem($barcode)
+    {
+        $data = $this->model->where('kode', $barcode)->get()->getRow();
+        if ($data) {
+            $response = [
+                'status' => 200,
+                'message' => 'Data ditemukan',
+                'data' => $data
+            ];
+        } else {
+            $response = [
+                'status' => 404,
+                'message' => 'Data tidak ditemukan',
+            ];
+        }
+        return $this->respond($response);
+    }
 }
