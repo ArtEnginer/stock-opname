@@ -72,10 +72,50 @@ class Db extends Migration
         $this->forge->addField($timestamp);
         $this->forge->addKey('id', true);
         $this->forge->createTable('items');
+
+        // stock opname
+        $stock_opname = [
+            'id' => [
+                'type' => 'INT',
+                'constraint' => 11,
+                'unsigned' => true,
+                'auto_increment' => true,
+            ],
+            'kode_opname' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+            ],
+            'id_item' => [
+                'type' => 'INT',
+                'constraint' => 11,
+            ],
+            'stok_lapangan' => [
+                'type' => 'VARCHAR',
+                'constraint' => 11,
+            ],
+            'status' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+            ],
+            'keterangan' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+            ],
+            'operator' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255,
+            ],
+        ];
+
+        $this->forge->addField($stock_opname);
+        $this->forge->addField($timestamp);
+        $this->forge->addKey('id', true);
+        $this->forge->createTable('stock_opname');
     }
 
     public function down()
     {
         $this->forge->dropTable('items');
+        $this->forge->dropTable('stock_opname');
     }
 }

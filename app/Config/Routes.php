@@ -16,6 +16,10 @@ $routes->group('api', ['namespace' => 'App\Controllers\API'], function ($routes)
     $routes->post('item/import', 'Item::import');
     $routes->get('download', 'Item::download');
     $routes->get('item/cekitem/(:any)', 'Item::cekItem/$1');
+
+    $routes->group('so', ['namespace' => 'App\Controllers\API'], function ($routes) {
+        $routes->get('/', 'StockOpname::index');
+    });
 });
 
 
@@ -24,7 +28,13 @@ $routes->group('item', ['namespace' => 'App\Controllers'], function ($routes) {
     $routes->get('create', 'Item::create');
     $routes->get('import', 'Item::import');
     $routes->get('export', 'Item::export');
-
-    // cek item
     $routes->get('cekitem', 'Item::cekItem');
+});
+
+$routes->group('so', ['namespace' => 'App\Controllers'], function ($routes) {
+    $routes->get('/', 'StockOpname::index');
+    $routes->get('create', 'StockOpname::create');
+    $routes->get('import', 'StockOpname::import');
+    $routes->get('export', 'StockOpname::export');
+    $routes->get('cekso', 'StockOpname::cekSo');
 });
