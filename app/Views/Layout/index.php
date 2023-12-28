@@ -24,7 +24,7 @@
     <script type="text/javascript" src="<?= base_url() . '/assets/lib/jquery-3.6.4.min.js' ?>"></script>
     <link rel="stylesheet" href="<?= base_url() . '/assets/lib/bootstrap.min.css' ?>">
     <link rel="stylesheet" href="<?= base_url() . '/assets/lib/dataTables.bootstrap5.min.css' ?>">
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="<?= base_url() . '/assets/css/bootstrap.min.css' ?>" rel="stylesheet">

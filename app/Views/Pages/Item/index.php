@@ -89,22 +89,35 @@
             ],
         });
 
-        // Add an event listener for the delete button
         $('#tableItem').on('click', '.delete-btn', function() {
             const itemId = $(this).data('id');
+            // ALERT
+            Swal.fire({
+                title: 'Apakah anda yakin?',
+                text: "Anda tidak akan dapat mengembalikan ini!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#6c757d',
+                confirmButtonText: 'Ya, hapus!',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: 'api/item/' + itemId,
+                        type: 'DELETE',
+                        success: function(result) {
+                            Swal.fire(
+                                'Terhapus!',
+                                'Data berhasil dihapus.',
+                                'success'
+                            )
+                            table.ajax.reload();
+                        }
+                    });
+                }
+            })
 
-            // Make an AJAX call to delete the item
-            $.ajax({
-                url: 'api/item/' + itemId,
-                type: 'DELETE',
-                success: function(result) {
-                    // Refresh the DataTable after successful deletion
-                    table.ajax.reload();
-                },
-                error: function(error) {
-                    console.error('Error deleting item:', error);
-                },
-            });
         });
     });
 </script>
