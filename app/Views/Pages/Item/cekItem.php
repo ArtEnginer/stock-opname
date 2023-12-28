@@ -114,7 +114,7 @@
                 target: document.querySelector('#interactive'),
             },
             decoder: {
-                readers: ["code_128_reader", "ean_reader", "ean_8_reader", "code_39_reader", "code_39_vin_reader", "codabar_reader", "upc_reader", "upc_e_reader", "i2of5_reader", "2of5_reader", "code_93_reader"]
+                readers: ["code_128_reader", "ean_reader", "ean_8_reader"]
             },
         }, function(err) {
             if (err) {
@@ -200,6 +200,11 @@
                         <th scope="col">Stok</th>
                         <td>=</td>
                         <td>${data.stok}</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Last Updated</th>
+                        <td>=</td>
+                        <td>${data.updated_at} <span class="badge bg-danger">Minta tanggal paling update</span></td>
                     </tr>
                 
                 

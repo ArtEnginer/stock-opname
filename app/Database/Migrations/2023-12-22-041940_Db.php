@@ -8,6 +8,20 @@ class Db extends Migration
 {
     public function up()
     {
+        $timestamp = [
+            'created_at' => [
+                'type' => 'DATETIME',
+                'null' => true,
+            ],
+            'updated_at' => [
+                'type' => 'DATETIME',
+                'null' => true,
+            ],
+            'deleted_at' => [
+                'type' => 'DATETIME',
+                'null' => true,
+            ],
+        ];
         $item = [
             'id' => [
                 'type' => 'INT',
@@ -32,28 +46,30 @@ class Db extends Migration
                 'constraint' => 255,
             ],
             'harga_beli' => [
-                'type' => 'FLOAT',
+                'type' => 'VARCHAR',
                 'constraint' => 11,
             ],
             'harga_jual' => [
-                'type' => 'FLOAT',
+                'type' => 'VARCHAR',
                 'constraint' => 11,
             ],
             'harga_jual_grosir' => [
-                'type' => 'FLOAT',
+                'type' => 'VARCHAR',
                 'constraint' => 11,
             ],
             'stok' => [
-                'type' => 'INT',
+                'type' => 'VARCHAR',
                 'constraint' => 11,
             ],
             'stok_opname' => [
-                'type' => 'INT',
+                'type' => 'VARCHAR',
                 'constraint' => 11,
             ],
+
         ];
 
         $this->forge->addField($item);
+        $this->forge->addField($timestamp);
         $this->forge->addKey('id', true);
         $this->forge->createTable('items');
     }

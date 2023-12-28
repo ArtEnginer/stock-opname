@@ -5,6 +5,7 @@ namespace App\Controllers\API;
 use App\Models\ItemModel as model;
 use CodeIgniter\RESTful\ResourceController;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
+use App\Entities\Item as ItemEntity;
 
 
 class Item extends ResourceController
@@ -109,7 +110,6 @@ class Item extends ResourceController
                 if ($existingData) {
                     $columnsToCheck = ['nama', 'satuan', 'harga_beli', 'harga_jual', 'harga_jual_grosir', 'supplier', 'stok'];
                     $needsUpdate = false;
-
                     foreach ($columnsToCheck as $index => $column) {
                         if ($existingData->{$column} != $value[$index + 1]) {
                             $needsUpdate = true;
@@ -126,7 +126,8 @@ class Item extends ResourceController
                             'supplier'          => isset($value[6]) ? $value[6] : null,
                             'stok'              => isset($value[7]) ? $value[7] : null,
                         ];
-
+                        // use updated at ItemEntity
+                        $updateData = new ItemEntity($updateData);
                         $this->model->update($existingData->id, $updateData);
                     }
                 } else {

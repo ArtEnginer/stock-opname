@@ -7,6 +7,10 @@ use CodeIgniter\Entity\Entity;
 class Item extends Entity
 {
     protected $datamap = [];
-    protected $dates   = [];
+    protected $dates   = [
+        'created_at',
+        'updated_at',
+        'deleted_at',
+    ];
     protected $casts   = [];
 }
