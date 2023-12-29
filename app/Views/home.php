@@ -6,50 +6,121 @@
             <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
             <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="3"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="4"></li>
+
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                 <img src="img/carousel-3.jpg" class="img-fluid" alt="Image">
                 <div class="carousel-caption">
                     <div class="p-3" style="max-width: 900px;">
-                        <h4 class="text-primary text-uppercase mb-3">Spa & Beauty Center</h4>
-                        <h1 class="display-1 text-capitalize text-dark mb-3">Massage Treatment</h1>
+                        <h4 class="text-primary text-uppercase mb-3">Fassion</h4>
+                        <h1 class="display-1 text-capitalize text-dark mb-3">
+                            <span class="text-primary">Fassion </span>
+                        </h1>
                         <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
                         <div class="d-flex align-items-center justify-content-center">
-                            <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
-                            <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                            <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">
+                                <i class="fas fa-scroll"></i> Learn More
+                            </a>
+                            <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">
+                                <i class="fas fa-shopping-cart"></i> Shop Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/carousel-3.jpg" class="img-fluid" alt="Image">
+                <div class="carousel-caption">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-primary text-uppercase mb-3">
+                            <span class="text-primary">Supermarket </span>
+                        </h4>
+                        <h1 class="display-1 text-capitalize text-dark mb-3">
+                            <span class="text-primary">Supermarket </span>
+                        </h1>
+                        <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">
+                                <i class="fas fa-scroll"></i> Learn More
+                            </a>
+                            <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">
+                                <i class="fas fa-shopping-cart"></i> Shop Now
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/carousel-2.jpg" class="img-fluid" alt="Image">
+                <img src="img/carousel-3.jpg" class="img-fluid" alt="Image">
                 <div class="carousel-caption">
                     <div class="p-3" style="max-width: 900px;">
-                        <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Spa & Beauty Center</h4>
-                        <h1 class="display-1 text-capitalize text-dark mb-3">Facial Treatment</h1>
-                        <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
+                        <h4 class="text-primary text-uppercase mb-3">
+                            <span class="text-primary">Houseware </span>
+                        </h4>
+                        <h1 class="display-1 text-capitalize text-dark mb-3">
+                            <span class="text-primary">Houseware </span>
+                        </h1>
+                        <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
                         <div class="d-flex align-items-center justify-content-center">
-                            <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
-                            <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                            <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">
+                                <i class="fas fa-scroll"></i> Learn More
+                            </a>
+                            <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">
+                                <i class="fas fa-shopping-cart"></i> Shop Now
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/carousel-1.jpg" class="img-fluid" alt="Image">
+                <img src="img/carousel-3.jpg" class="img-fluid" alt="Image">
                 <div class="carousel-caption">
                     <div class="p-3" style="max-width: 900px;">
-                        <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Spa & Beauty Center</h4>
-                        <h1 class="display-1 text-capitalize text-dark">Cellulite Treatment</h1>
-                        <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
+                        <h4 class="text-primary text-uppercase mb-3">
+                            <span class="text-primary">Aksesoris </span>
+                        </h4>
+                        <h1 class="display-1 text-capitalize text-dark mb-3">
+                            <span class="text-primary">Aksesoris </span>
+                        </h1>
+                        <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
                         <div class="d-flex align-items-center justify-content-center">
-                            <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Get Start</a>
-                            <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                            <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">
+                                <i class="fas fa-scroll"></i> Learn More
+                            </a>
+                            <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">
+                                <i class="fas fa-shopping-cart"></i> Shop Now
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="carousel-item">
+                <img src="img/carousel-3.jpg" class="img-fluid" alt="Image">
+                <div class="carousel-caption">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-primary text-uppercase mb-3">
+                            <span class="text-primary">Mr Game </span>
+                        </h4>
+                        <h1 class="display-1 text-capitalize text-dark mb-3">
+                            <span class="text-primary">Mr Game </span>
+                        </h1>
+                        <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">
+                                <i class="fas fa-scroll"></i> Learn More
+                            </a>
+                            <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">
+                                <i class="fas fa-shopping-cart"></i> Shop Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -69,7 +140,9 @@
     <div class="container py-5">
         <div class="mx-auto text-center mb-5" style="max-width: 800px;">
             <p class="fs-4 text-uppercase text-center text-primary">Our Service</p>
-            <h1 class="display-3">Spa & Beauty Services</h1>
+            <h1 class="display-3">
+
+            </h1>
         </div>
         <div class="row g-4">
             <div class="col-lg-6">
@@ -77,7 +150,9 @@
                     <div class="row align-items-center">
                         <div class="col-8">
                             <div class="services-content text-end">
-                                <h3>Skin Care</h3>
+                                <h3>
+                                    <span class="text-primary">Fassion </span>
+                                </h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
                                 <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
                             </div>
@@ -100,7 +175,9 @@
                         </div>
                         <div class="col-8">
                             <div class="services-content text-start">
-                                <h3>Face Masking</h3>
+                                <h3>
+                                    <span class="text-primary">Supermarket </span>
+                                </h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
                                 <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
                             </div>
@@ -113,7 +190,9 @@
                     <div class="row align-items-center">
                         <div class="col-8">
                             <div class="services-content text-end">
-                                <h3>Stream Bath</h3>
+                                <h3>
+                                    <span class="text-primary">Houseware </span>
+                                </h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
                                 <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
                             </div>
@@ -136,7 +215,9 @@
                         </div>
                         <div class="col-8">
                             <div class="services-content text-start">
-                                <h3>Facial Therapy</h3>
+                                <h3>
+                                    <span class="text-primary">Aksesoris </span>
+                                </h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
                                 <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
                             </div>
@@ -149,7 +230,9 @@
                     <div class="row align-items-center">
                         <div class="col-8">
                             <div class="services-content text-end">
-                                <h3>Body Massage</h3>
+                                <h3>
+                                    <span class="text-primary">Mr Game </span>
+                                </h3>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
                                 <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
                             </div>
@@ -162,60 +245,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                <img src="img/services-6.jpg" class="img-fluid rounded" alt="">
-                            </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="services-content text-start">
-                                <h3>Aroma Therapy</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-                                <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
-                    <div class="row align-items-center">
-                        <div class="col-8">
-                            <div class="services-content text-end">
-                                <h3>Mineral Baths</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-                                <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                <img src="img/services-3.jpg" class="img-fluid rounded" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <div class="services-img d-flex align-items-center justify-content-center rounded">
-                                <img src="img/services-1.jpg" class="img-fluid rounded" alt="">
-                            </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="services-content text-start">
-                                <h3>Stone Therapy</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-                                <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div class="col-12">
                 <div class="services-btn text-center">
                     <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Service More</a>
@@ -226,56 +256,6 @@
 </div>
 <!-- Services End -->
 
-
-<!-- About Start -->
-<div class="container-fluid about py-5">
-    <div class="container py-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-5">
-                <div class="video">
-                    <img src="img/about-1.jpg" class="img-fluid rounded" alt="">
-                    <div class="position-absolute rounded border-5 border-top border-start border-white" style="bottom: 0; right: 0;;">
-                        <img src="img/about-2.jpg" class="img-fluid rounded" alt="">
-                    </div>
-                    <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-            <div class="col-lg-7">
-                <p class="fs-4 text-uppercase text-primary">About Us</p>
-                <h1 class="display-4 mb-4">Your Best Spa, Beauty & Skin Care Center</h1>
-                <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                </p>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="fab fa-gitkraken fa-3x text-primary"></i>
-                            <div class="ms-4">
-                                <h5 class="mb-2">Special Offers</h5>
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-gift fa-3x text-primary"></i>
-                            <div class="ms-4">
-                                <h5 class="mb-2">Special Offers</h5>
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p class="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                </p>
-                <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-                <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Explore More</a>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- Modal Video -->
 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -799,89 +779,6 @@
     </div>
 </div>
 <!-- gallery End -->
-
-
-<!-- Pricing Start -->
-<div class="container-fluid pricing py-5">
-    <div class="container py-5">
-        <div class="owl-carousel pricing-carousel">
-            <div class="pricing-item">
-                <div class="rounded pricing-content">
-                    <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                        <h1 class="display-4 mb-0">
-                            <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>49<small class="text-muted" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                        </h1>
-                        <h5 class="text-primary text-uppercase m-0">Basic Plan</h5>
-                    </div>
-                    <div class="p-4">
-                        <p><i class="fa fa-check text-primary me-2"></i>Full Body Massage</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Deep Tissue Massage</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Massage</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Tissue Body Polish</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Foot & Nail Care</p>
-                        <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="pricing-item">
-                <div class="pricing-content rounded">
-                    <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                        <h1 class="display-4 mb-0">
-                            <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>99<small class="text-muted" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                        </h1>
-                        <h5 class="text-primary text-uppercase m-0">Family Plan</h5>
-                    </div>
-                    <div class="p-4">
-                        <p><i class="fa fa-check text-primary me-2"></i>Full Body Massage</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Deep Tissue Massage</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Massage</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Tissue Body Polish</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Foot & Nail Care</p>
-                        <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="pricing-item">
-                <div class="pricing-content rounded">
-                    <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                        <h1 class="display-4 mb-0">
-                            <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>149<small class="text-muted" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                        </h1>
-                        <h5 class="text-primary text-uppercase m-0">VIP Plan</h5>
-                    </div>
-                    <div class="p-4">
-                        <p><i class="fa fa-check text-primary me-2"></i>Full Body Massage</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Deep Tissue Massage</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Massage</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Tissue Body Polish</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Foot & Nail Care</p>
-                        <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="pricing-item">
-                <div class="pricing-content rounded">
-                    <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
-                        <h1 class="display-4 mb-0">
-                            <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>199<small class="text-muted" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                        </h1>
-                        <h5 class="text-primary text-uppercase m-0">Most Plan</h5>
-                    </div>
-                    <div class="p-4">
-                        <p><i class="fa fa-check text-primary me-2"></i>Full Body Massage</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Deep Tissue Massage</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Massage</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Tissue Body Polish</p>
-                        <p><i class="fa fa-check text-primary me-2"></i>Foot & Nail Care</p>
-                        <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Pricing End -->
-
 
 <!-- Team Start -->
 <div class="container-fluid team py-5">

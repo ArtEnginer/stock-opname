@@ -7,7 +7,7 @@
         </div>
         <div class="card-body">
             <div class="table-responsive">
-                <table id="tableItem" class="display responsive" style="width:100%">
+                <table id="tableSo" class="display responsive" style="width:100%">
                     <thead>
                         <th>No</th>
                         <th>Kode</th>
@@ -27,10 +27,9 @@
         </div>
     </div>
 </div>
-
 <script>
     $(document).ready(function() {
-        const table = $("#tableItem").DataTable({
+        const table = $("#tableSo").DataTable({
             responsive: true,
             ajax: {
                 url: "api/so",
@@ -43,34 +42,31 @@
                     },
                 },
                 {
-                    data: "kode"
+                    data: "kode_opname"
                 },
                 {
-                    data: "nama"
+                    data: "item.nama" // Corrected to access nested property
                 },
                 {
-                    data: "satuan"
+                    data: "item.stok"
                 },
                 {
-                    data: "harga_beli"
+                    data: "stok_lapangan"
                 },
                 {
-                    data: "harga_jual"
+                    data: "status"
                 },
                 {
-                    data: "harga_jual_grosir"
+                    data: "keterangan"
                 },
                 {
-                    data: "supplier"
-                },
-                {
-                    data: "stok"
+                    data: "created_at"
                 },
                 {
                     data: "action",
                     render: function(data, type, row) {
                         return (
-                            '<a href="item/' +
+                            '<a href="so/' +
                             row.id +
                             '/edit" class="btn btn-warning btn-sm">Edit</a> <button class="btn btn-danger btn-sm delete-btn" data-id="' +
                             row.id +
@@ -81,7 +77,7 @@
             ],
         });
 
-        $('#tableItem').on('click', '.delete-btn', function() {
+        $('#tableSo').on('click', '.delete-btn', function() {
             const itemId = $(this).data('id');
             // ALERT
             Swal.fire({
@@ -96,7 +92,7 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
-                        url: 'api/item/' + itemId,
+                        url: 'api/so/' + itemId, // Corrected URL
                         type: 'DELETE',
                         success: function(result) {
                             Swal.fire(
@@ -109,8 +105,8 @@
                     });
                 }
             })
-
         });
     });
 </script>
+
 <?php $this->endSection() ?>

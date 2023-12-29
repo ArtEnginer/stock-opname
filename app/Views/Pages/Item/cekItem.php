@@ -165,12 +165,22 @@
     function updateResult(data) {
         var resultElement = document.querySelector('.result');
 
+
         // Check if data is available
         if (data) {
+            var hargaBeli = Number(data.harga_beli.replace(/,/g, ''));
+            var hargaJual = Number(data.harga_jual.replace(/,/g, ''));
+            var margin = ((hargaJual - hargaBeli) / hargaBeli) * 100;
+
             // Create a table to display product information
             var tableTemplate = `
             <table class="table">
             <tbody>
+                    <tr>
+                        <th scope="col">Supplier</th>
+                        <td>=</td>
+                        <td>${data.supplier}</td>
+                    </tr>
                     <tr>
                         <th scope="col">Nama Produk</th>
                         <td>=</td>
@@ -192,6 +202,10 @@
                         <td>${data.harga_jual}</td>
                     </tr>
                     <tr>
+                        <th scope="col">Margin</th>
+                        <td>=</td>
+                       <td>${isNaN(margin) ? 'Invalid input' : margin.toFixed(2)}</td>
+                    <tr>
                         <th scope="col">Harga Jual Grosir</th>
                         <td>=</td>
                         <td>${data.harga_jual_grosir}</td>
@@ -206,12 +220,9 @@
                         <td>=</td>
                         <td>${data.updated_at} <span class="badge bg-danger">Minta tanggal paling update</span></td>
                     </tr>
-                
-                
                 </tbody>
             </table>
         `;
-
             // Display the table template in the result element
             resultElement.innerHTML = tableTemplate;
         } else {
