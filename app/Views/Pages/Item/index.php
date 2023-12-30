@@ -5,11 +5,11 @@
         <div class="card-header">
             <h4 class="card-title">Data Barang</h4>
             <div class="d-flex justify-content-end">
-                <a href="<?= base_url() . 'item/create' ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah</a>
+                <!-- <a href="<?= base_url() . 'item/create' ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah</a> -->
                 <!-- import -->
                 <a href="<?= base_url() . 'item/import' ?>" class="btn btn-success btn-sm"><i class="fas fa-file-import"></i> Import</a>
                 <!-- export -->
-                <a href="<?= base_url() . 'item/export' ?>" class="btn btn-warning btn-sm"><i class="fas fa-file-export"></i> Export</a>
+                <!-- <a href="<?= base_url() . 'item/export' ?>" class="btn btn-warning btn-sm"><i class="fas fa-file-export"></i> Export</a> -->
             </div>
         </div>
         <div class="card-body">

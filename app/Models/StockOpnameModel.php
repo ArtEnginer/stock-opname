@@ -20,7 +20,6 @@ class StockOpnameModel extends Model
         'status',
         'keterangan',
         'operator',
-
     ];
 
     // Dates

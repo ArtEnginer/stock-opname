@@ -19,6 +19,8 @@ $routes->group('api', ['namespace' => 'App\Controllers\API'], function ($routes)
 
     $routes->group('so', ['namespace' => 'App\Controllers\API'], function ($routes) {
         $routes->get('/', 'StockOpname::index');
+        $routes->post('create', 'StockOpname::create');
+        $routes->delete('(:num)', 'StockOpname::delete/$1');
     });
 });
 

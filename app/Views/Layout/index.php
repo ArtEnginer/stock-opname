@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="<?= base_url() . '/assets/lib/bootstrap.min.css' ?>">
     <link rel="stylesheet" href="<?= base_url() . '/assets/lib/dataTables.bootstrap5.min.css' ?>">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="<?= base_url() . '/assets/css/bootstrap.min.css' ?>" rel="stylesheet">

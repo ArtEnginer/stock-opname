@@ -21,4 +21,12 @@ class StockOpname extends BaseController
         ];
         return view('Pages/StockOpname/index');
     }
+
+    public function create()
+    {
+        $data = [
+            'title' => 'Stock Opname',
+        ];
+        return view('Pages/StockOpname/create', $data);
+    }
 }

@@ -2,9 +2,13 @@
 <?php $this->section('main') ?>
 <div class="container mt-3 mb-3">
     <div class="card">
-        <div class="card-header">
-            <h4 class="card-title">Riwayat Opname</h4>
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h4 class="card-title mb-0">Riwayat Opname</h4>
+            <div>
+                <a href="<?= base_url('so/create') ?>" class="btn btn-primary btn-sm text-white"><i class="fas fa-plus"></i></a>
+            </div>
         </div>
+
         <div class="card-body">
             <div class="table-responsive">
                 <table id="tableSo" class="display responsive" style="width:100%">
